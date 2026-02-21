@@ -1,0 +1,153 @@
+/**
+ * Public-facing styles for WP Sermons plugin.
+ *
+ * @package    WP_Sermons
+ */
+
+/* Sermon List Styles */
+.sermon-list {
+	display: grid;
+	gap: 20px;
+	margin: 20px 0;
+}
+
+.sermon-list__item {
+	display: flex;
+	gap: 20px;
+	padding: 20px;
+	background: #f9f9f9;
+	border-radius: 8px;
+	border: 1px solid #e0e0e0;
+}
+
+.sermon-list__item:hover {
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sermon-list__thumbnail {
+	flex-shrink: 0;
+	width: 180px;
+}
+
+.sermon-list__thumbnail img {
+	width: 100%;
+	height: auto;
+	border-radius: 4px;
+}
+
+.sermon-list__content {
+	flex: 1;
+}
+
+.sermon-list__title {
+	margin: 0 0 10px;
+	font-size: 1.5em;
+	line-height: 1.3;
+}
+
+.sermon-list__title-link {
+	text-decoration: none;
+	color: #333;
+}
+
+.sermon-list__title-link:hover {
+	color: #0073aa;
+}
+
+.sermon-list__meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	margin-bottom: 10px;
+	font-size: 0.9em;
+	color: #666;
+}
+
+.sermon-list__meta-item {
+	display: inline-flex;
+	align-items: center;
+}
+
+.sermon-list__meta-item--series::before {
+	content: "📚 ";
+	margin-right: 5px;
+}
+
+.sermon-list__meta-item--speaker::before {
+	content: "🎤 ";
+	margin-right: 5px;
+}
+
+.sermon-list__meta-item--date::before {
+	content: "📅 ";
+	margin-right: 5px;
+}
+
+.sermon-list__excerpt {
+	color: #444;
+	line-height: 1.6;
+}
+
+/* Sermon Series List */
+.sermon-series-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: 20px;
+	margin: 20px 0;
+}
+
+.sermon-series-list__item {
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+}
+
+.sermon-series-list__item:hover {
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sermon-series-list__title {
+	margin: 0 0 10px;
+	font-size: 1.3em;
+}
+
+.sermon-series-list__title-link {
+	text-decoration: none;
+	color: #333;
+}
+
+.sermon-series-list__title-link:hover {
+	color: #0073aa;
+}
+
+.sermon-series-list__description {
+	margin: 10px 0;
+	color: #666;
+	line-height: 1.6;
+}
+
+.sermon-series-list__count {
+	display: inline-block;
+	margin-top: 10px;
+	padding: 5px 10px;
+	background: #f0f0f0;
+	border-radius: 4px;
+	font-size: 0.9em;
+	color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+	.sermon-list__item {
+		flex-direction: column;
+	}
+
+	.sermon-list__thumbnail {
+		width: 100%;
+	}
+
+	.sermon-series-list {
+		grid-template-columns: 1fr;
+	}
+}

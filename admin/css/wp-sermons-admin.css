@@ -1,0 +1,50 @@
+/**
+ * Admin-specific styles for WP Sermons plugin.
+ *
+ * @package    WP_Sermons
+ */
+
+/* Settings Page Styles */
+.wp-sermons-settings {
+	max-width: 800px;
+}
+
+.wp-sermons-settings__input--number {
+	width: 80px;
+}
+
+.wp-sermons-settings__description {
+	margin-top: 5px;
+	font-style: italic;
+	color: #666;
+}
+
+/* Admin List View Customizations */
+.post-type-sermon .tablenav {
+	clear: both;
+}
+
+.post-type-sermon .column-sermon_series,
+.post-type-sermon .column-sermon_speaker {
+	width: 150px;
+}
+
+/* Meta Box Styling */
+.sermon-meta-box__label {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+
+.sermon-meta-box__input--text,
+.sermon-meta-box__input--url,
+.sermon-meta-box__input--date {
+	width: 100%;
+}
+
+.sermon-meta-box__description {
+	margin-top: 5px;
+	font-style: italic;
+	color: #666;
+	font-size: 12px;
+}
